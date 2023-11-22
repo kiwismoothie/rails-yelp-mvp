@@ -15,7 +15,7 @@ CATEGORY = ["chinese", "italian", "japanese", "french", "belgian"]
 
 5.times do
   restaurant = Restaurant.new(
-    name: Faker::Name.name,
+    name: Faker::Restaurant.name,
     address: Faker::Address.city,
     category: CATEGORY.sample,
     phone_number: Faker::PhoneNumber.cell_phone_with_country_code

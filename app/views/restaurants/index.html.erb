@@ -1,0 +1,10 @@
+
+<h1 class = m-3> Restaurants </h1>
+
+<div class = "p-3 mb-2 .bg-light text-white">
+  <ul>
+    <% @restaurant.each do |restaurant| %>
+    <li><%= link_to restaurant.name,  restaurant_path(restaurant.id) %></li>
+    <% end %>
+  </ul>
+</div>
